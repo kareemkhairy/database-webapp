@@ -1,0 +1,36 @@
+# .gitignore
+
+# Python
+*.pyc
+__pycache__/
+
+# Environment
+.env
+
+# Django
+/db.sqlite3
+/staticfiles/
+media/
+
+# Docker
+*.log
+*.pid
+*.sock
+*.seed
+*.backup
+*.conf
+*.orig
+*.log.*
+*.log.*
+*.old
+tmp/
+*.rmi
+*.histfile
+.DS_Store
+*.swp
+.idea/
+.vscode/
+
+# IDEs
+.vscode/
+.idea/

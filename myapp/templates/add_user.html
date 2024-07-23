@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
-    <h1>Add User</h1>
+    <h1 style="display: flex; text-align: center; align-items: center; justify-content: center;">Add User</h1>
     <form method="post">
         {% csrf_token %}
         {{ form.as_p }}

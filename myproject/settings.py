@@ -77,13 +77,16 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'myapp',
+        'NAME': 'myapp',  # Replace with your database name
         'USER': 'karimk7',
-        'PASSWORD': 'kiiii77',
-        'HOST': 'localhost',
+        'PASSWORD': 'supersecretpassword',  # Replace with the password you set in docker-compose.yml
+        'HOST': 'db',  # This should match the service name in docker-compose.yml
         'PORT': '3306',
     }
 }
+
+
+
 
 
 # Password validation
