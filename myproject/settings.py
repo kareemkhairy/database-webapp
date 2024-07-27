@@ -77,14 +77,18 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'myapp',  # Replace with your database name
-        'USER': 'karimk7',
-        'PASSWORD': 'supersecretpassword',  # Replace with the password you set in docker-compose.yml
-        'HOST': 'db',  # This should match the service name in docker-compose.yml
-        'PORT': '3306',
+        'NAME': 'myapp',  # Replace with your RDS database name
+        'USER': 'karimk7',  # Replace with your RDS database username
+        'PASSWORD': 'supersecretpassword',  # Replace with your RDS database password
+        'HOST': 'myapp.cd4bdexntaad.us-east-1.rds.amazonaws.com',  # Replace with your RDS endpoint, e.g., myapp.xxxxxxx.us-east-1.rds.amazonaws.com
+        'PORT': '3306',  # The default MySQL port
     }
 }
 
+
+# settings.py
+
+ALLOWED_HOSTS = ['34.225.100.248', 'your_server_domain_or_IP']
 
 
 
